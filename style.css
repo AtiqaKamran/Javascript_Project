@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background-color: black;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    color: red;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li a.active {
+    border-bottom: 2px solid red;
+}
+
+button {
+    padding: 8px 15px;
+    cursor: pointer;
+    background-color: red;
+    border: none;
+    color: white;
+}
+
+/* HERO SECTION */
+.hero {
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.heroVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    filter: brightness(0.5);
+}
+
+.heroTextContainer {
+    text-align: center;
+    z-index: 1;
+}
+
+/* MOVIES */
+#movies {
+    padding: 40px;
+    text-align: center;
+}
+
+.movieContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 30px;
+}
+
+.card {
+    background-color: #111;
+    padding: 10px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.card h3 {
+    margin-top: 10px;
+    color: white;
+}
+
+.card:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    text-align: center;
+    padding: 15px;
+    background-color: #111;
+}
+
+/* ================= LIGHT MODE ================= */
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
+
+.light-mode nav {
+    background-color: white;
+}
+
+.light-mode nav ul li a {
+    color: black;
+}
+
+.light-mode .card {
+    background-color: #f2f2f2;
+}
+
+.light-mode .card h3 {
+    color: black;
+}
+
+.light-mode footer {
+    background-color: #f2f2f2;
+    color: black;
+}

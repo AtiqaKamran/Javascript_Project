@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav>
+    <h2 class="logo">Netflix</h2>
+    <ul>
+        <li><a href="#" class="active">Home</a></li>
+        <li><a href="#movies">Movies</a></li>
+        <li><a href="#footer">Contact</a></li>
+    </ul>
+    <button id="themeBtn">Light Mode</button>
+</nav>
+
+<!-- HERO VIDEO / IMAGE SECTION -->
+<section class="hero">
+    <video autoplay muted loop class="heroVideo">
+        <source src="https://cpf-temp-repo-an1-prod.s3.ap-northeast-1.amazonaws.com/527d68a8-a43a-46ca-9fd2-5b1a25549326?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20260223T142522Z&X-Amz-SignedHeaders=host&X-Amz-Expires=86400&X-Amz-Credential=AKIAU3E5TYZ2T4JSFKPF%2F20260223%2Fap-northeast-1%2Fs3%2Faws4_request&X-Amz-Signature=9642b84bf8213ba8d234a6a966f65007fe4af4361dcd42e5995574db46685b9d" type="video/mp4">
+        Your browser does not support HTML video.
+    </video>
+    <div class="heroTextContainer">
+        <h1 id="heroText">Unlimited Movies, TV Shows and More</h1>
+        <p>Watch anywhere. Cancel anytime.</p>
+        <button id="changeTextBtn">Explore Now</button>
+    </div>
+</section>
+
+<!-- MOVIE SECTION -->
+<section id="movies">
+    <h2>Popular Movies</h2>
+    <button id="toggleBtn">Hide Movies</button>
+
+    <div class="movieContainer">
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/0d/5f/16/0d5f16e60422bdc57c0451d9a586e302.jpg">
+            <h3>Beauty and the Beast</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/e4/bb/97/e4bb97ed99a32328cbf3a9517845abb8.jpg">
+            <h3>Zootopia</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/fe/03/f0/fe03f061ec15fe974a319b6215880b25.jpg">
+            <h3>Harry Potter</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/1200x/03/63/53/036353d39f1846ab68c61271e717287f.jpg">
+            <h3>Inside Out 2</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/b7/99/c9/b799c934c48f0edc297b80ffcfaeaef2.jpg">
+            <h3>TOY Story 2</h3>
+        </div>
+
+        <div class="card">
+            <img src="https://i.pinimg.com/736x/c8/54/cc/c854ccce48c3dbbeb16a834046bce01c.jpg">
+            <h3>SpiderMan</h3>
+        </div>
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+    <p>© 2013 Netflix. All Rights Reserved.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
